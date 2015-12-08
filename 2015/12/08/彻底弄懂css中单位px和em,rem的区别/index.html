@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>方雨_Yu的博客</title>
+  <title>彻底弄懂css中单位px和em,rem的区别 | 方雨_Yu的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="方雨_Yu的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="彻底弄懂css中单位px和em,rem的区别">
+<meta property="og:url" content="http://yoursite.com/2015/12/08/彻底弄懂css中单位px和em,rem的区别/index.html">
 <meta property="og:site_name" content="方雨_Yu的博客">
-<meta property="og:description">
+<meta property="og:description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？">
+<meta property="og:image" content="http://bbs.html5cn.org/data/attachment/forum/201403/05/1505196wwz21kmjckgk22k.jpg">
+<meta property="og:updated_time" content="2015-12-08T06:18:52.099Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="方雨_Yu的博客">
-<meta name="twitter:description">
+<meta name="twitter:title" content="彻底弄懂css中单位px和em,rem的区别">
+<meta name="twitter:description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？">
   
     <link rel="alternative" href="/atom.xml" title="方雨_Yu的博客" type="application/atom+xml">
   
@@ -177,59 +179,7 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="[page]-标题" class="article article-type-[page]" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/08/标题/" class="article-date">
-  	<time datetime="2015-12-08T06:02:58.000Z" itemprop="datePublished">2015-12-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/08/标题/">标题</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-彻底弄懂css中单位px和em,rem的区别" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-彻底弄懂css中单位px和em,rem的区别" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2015/12/08/彻底弄懂css中单位px和em,rem的区别/" class="article-date">
@@ -245,12 +195,27 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/08/彻底弄懂css中单位px和em,rem的区别/">彻底弄懂css中单位px和em,rem的区别</a>
+    <h1 class="article-title" itemprop="name">
+      彻底弄懂css中单位px和em,rem的区别
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/前端/">前端</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -261,42 +226,94 @@
 <li>国外的大部分网站能够调整的原因在于其使用了em或rem作为字体单位；</li>
 <li>Firefox能够调整px和em，rem，但是96%以上的中国网民使用IE浏览器(或内核)。</li>
 </ol>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
-	</div>
+<a id="more"></a> 
+<p><img src="http://bbs.html5cn.org/data/attachment/forum/201403/05/1505196wwz21kmjckgk22k.jpg" alt="Font-size"></p>
+<p>px像素（Pixel）。相对长度单位。像素px是相对于显示器屏幕分辨率而言的。(引自CSS2.0手册) </p>
+<p>em是相对长度单位。相对于当前对象内文本的字体尺寸。如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸。(引自CSS2.0手册)</p>
+<p>任意浏览器的默认字体高都是16px。所有未经调整的浏览器都符合: 1em=16px。那么12px=0.75em,10px=0.625em。为了简化font-size的换算，需要在css中的body选择器中声明 Font-size=62.5%，这就使em值变为 16px*62.5%=10px, 这样12px=1.2em, 10px=1em, 也就是说只需要将你的原来的px数值除以10，然后换上em作为单位就行了。</p>
+<p>EM特点 </p>
+<ol>
+<li>em的值并不是固定的；</li>
+<li>em会继承父级元素的字体大小。</li>
+</ol>
+<p>所以我们在写CSS的时候，需要注意两点：</p>
+<ol>
+<li>body选择器中声明Font-size=62.5%；</li>
+<li>将你的原来的px数值除以10，然后换上em作为单位；</li>
+<li>重新计算那些被放大的字体的em数值。避免字体大小的重复声明。 </li>
+</ol>
+<p>也就是避免1.2 * 1.2= 1.44的现象。比如说你在#content中声明了字体大小为1.2em，那么在声明p的字体大小时就只能是1em，而不是1.2em, 因为此em非彼em，它因继承#content的字体高而变为了1em=12px。</p>
+<p>rem特点 </p>
+<p>rem是CSS3新 增的一个相对单位（root em，根em），这个单位引起了广泛关注。这个单位与em有什么区别呢？区别在于使用rem为元素设定字体大小时，仍然是相对大小，但相对的只是HTML 根元素。这个单位可谓集相对大小和绝对大小的优点于一身，通过它既可以做到只修改根元素就成比例地调整所有字体大小，又可以避免字体大小逐层复合的连锁反 应。目前，除了IE8及更早版本外，所有浏览器均已支持rem。对于不支持它的浏览器，应对方法也很简单，就是多写一个绝对单位的声明。这些浏览器会忽略 用rem设定的字体大小。下面就是一个例子：</p>
+<p>p {font-size:14px; font-size:.875rem;}</p>
+<p>注意： </p>
+<p>选择使用什么字体单位主要由你的项目来决定，如果你的用户群都使用最新版的浏览器，那推荐使用rem，如果要考虑兼容性，那就使用px,或者两者同时使用。</p>
+<p>在这里为大家提供一个px,em,rem单位转换工具</p>
+<p>地址：<a href="http://pxtoem.com/" target="_blank" rel="external">http://pxtoem.com/</a></p>
 
       
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/前端/">前端</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/12/08/彻底弄懂css中单位px和em,rem的区别/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
+    
+<nav id="article-nav">
+  
+    <a href="/2015/12/08/标题/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          标题
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
 </article>
 
 
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="彻底弄懂css中单位px和em,rem的区别" data-title="彻底弄懂css中单位px和em,rem的区别" data-url="http://yoursite.com/2015/12/08/彻底弄懂css中单位px和em,rem的区别/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"sufangyu"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
 
-
-  
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -320,8 +337,8 @@
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
