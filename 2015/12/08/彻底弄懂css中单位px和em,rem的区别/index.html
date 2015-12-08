@@ -11,8 +11,8 @@
 <meta property="og:url" content="http://yoursite.com/2015/12/08/彻底弄懂css中单位px和em,rem的区别/index.html">
 <meta property="og:site_name" content="方雨_Yu的博客">
 <meta property="og:description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？">
-<meta property="og:image" content="http://bbs.html5cn.org/data/attachment/forum/201403/05/1505196wwz21kmjckgk22k.jpg">
-<meta property="og:updated_time" content="2015-12-08T06:18:52.099Z">
+<meta property="og:image" content="http://7xp00j.com1.z0.glb.clouddn.com/static/images/1505196wwz21kmjckgk22k.jpg?imageView2/2/w/600">
+<meta property="og:updated_time" content="2015-12-08T09:12:48.163Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="彻底弄懂css中单位px和em,rem的区别">
 <meta name="twitter:description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？">
@@ -41,7 +41,7 @@
 		</hgroup>
 
 		
-		<p class="header-subtitle">关注前端开发，热爱生活。</p>
+		<p class="header-subtitle">关注前端开发，爱生活！</p>
 		
 
 		
@@ -79,8 +79,6 @@
 						<ul>
 						
 							<li><a href="/">主页</a></li>
-				        
-							<li><a href="/archives">所有文章</a></li>
 				        
 							<li><a href="/categories/前端">前端</a></li>
 				        
@@ -134,14 +132,12 @@
 			  <h1 class="header-author">方雨_Yu</h1>
 			</hgroup>
 			
-			<p class="header-subtitle">关注前端开发，热爱生活。</p>
+			<p class="header-subtitle">关注前端开发，爱生活！</p>
 			
 			<nav class="header-menu">
 				<ul>
 				
 					<li><a href="/">主页</a></li>
-		        
-					<li><a href="/archives">所有文章</a></li>
 		        
 					<li><a href="/categories/前端">前端</a></li>
 		        
@@ -214,7 +210,7 @@
 <li>Firefox能够调整px和em，rem，但是96%以上的中国网民使用IE浏览器(或内核)。</li>
 </ol>
 <a id="more"></a> 
-<p><img src="http://bbs.html5cn.org/data/attachment/forum/201403/05/1505196wwz21kmjckgk22k.jpg" alt="Font-size"></p>
+<img title="图片标题" alt="图片说明" class="text-center" src="http://7xp00j.com1.z0.glb.clouddn.com/static/images/1505196wwz21kmjckgk22k.jpg?imageView2/2/w/600">
 <p>px像素（Pixel）。相对长度单位。像素px是相对于显示器屏幕分辨率而言的。(引自CSS2.0手册) </p>
 <p>em是相对长度单位。相对于当前对象内文本的字体尺寸。如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸。(引自CSS2.0手册)</p>
 <p>任意浏览器的默认字体高都是16px。所有未经调整的浏览器都符合: 1em=16px。那么12px=0.75em,10px=0.625em。为了简化font-size的换算，需要在css中的body选择器中声明 Font-size=62.5%，这就使em值变为 16px*62.5%=10px, 这样12px=1.2em, 10px=1em, 也就是说只需要将你的原来的px数值除以10，然后换上em作为单位就行了。</p>
@@ -292,7 +288,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2015 方雨_Yu
+    		&copy; 2015 方雨_Yu的博客
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -347,6 +343,12 @@ MathJax.Hub.Queue(function() {
 </script>
 
 
+
+
+<div id="totop" style="position:fixed;z-index:1000;bottom:30px;right:10px;cursor:pointer;">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
   </div>
 </body>
 </html>
