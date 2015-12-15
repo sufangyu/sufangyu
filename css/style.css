@@ -694,6 +694,13 @@ a {
 #header .header-nav .social a.mail:hover {
   border: 1px solid #006b98;
 }
+#header .header-nav .social a.zcool {
+  background: url("/img/zcool.png") center no-repeat #ba8f6c;
+  border: 1px solid #ba8f6c;
+}
+#header .header-nav .social a.zcool:hover {
+  border: 1px solid #a17c5d;
+}
 #header .switch-part {
   width: 100%;
   position: absolute;
