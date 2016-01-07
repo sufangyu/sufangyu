@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>彻底弄懂css中单位px和em,rem的区别 | 方雨_Yu的博客</title>
+  <title>rem Chrome bug：rem单位的字号在Chrome浏览器中过大 | 方雨_Yu的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？">
+  <meta name="description" content="rem单位的网站，在用Chrome初始化页面时，有时候会出现字体很大的情况。但是刷新一下页面就好了。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="彻底弄懂css中单位px和em,rem的区别">
-<meta property="og:url" content="http://sufangyu.github.io/2015/12/08/彻底弄懂css中单位px和em,rem的区别/index.html">
+<meta property="og:title" content="rem Chrome bug：rem单位的字号在Chrome浏览器中过大">
+<meta property="og:url" content="http://sufangyu.github.io/2016/01/07/rem-Chrome-bug：rem单位的字号在Chrome浏览器中过大/index.html">
 <meta property="og:site_name" content="方雨_Yu的博客">
-<meta property="og:description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？">
-<meta property="og:image" content="http://7xp00j.com1.z0.glb.clouddn.com/static/images/1505196wwz21kmjckgk22k.jpg?imageView2/2/w/600">
-<meta property="og:updated_time" content="2015-12-13T14:47:54.593Z">
+<meta property="og:description" content="rem单位的网站，在用Chrome初始化页面时，有时候会出现字体很大的情况。但是刷新一下页面就好了。">
+<meta property="og:image" content="http://7xp00j.com1.z0.glb.clouddn.com/static/images/chrome-font-size-bug.jpg">
+<meta property="og:updated_time" content="2016-01-07T15:03:54.634Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="彻底弄懂css中单位px和em,rem的区别">
-<meta name="twitter:description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？">
+<meta name="twitter:title" content="rem Chrome bug：rem单位的字号在Chrome浏览器中过大">
+<meta name="twitter:description" content="rem单位的网站，在用Chrome初始化页面时，有时候会出现字体很大的情况。但是刷新一下页面就好了。">
   
     <link rel="alternative" href="/atom.xml" title="方雨_Yu的博客" type="application/atom+xml">
   
@@ -168,7 +168,7 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-彻底弄懂css中单位px和em,rem的区别" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-rem-Chrome-bug：rem单位的字号在Chrome浏览器中过大" class="article article-type-post" itemscope itemprop="blogPost">
   
     
 	
@@ -176,8 +176,8 @@
 	
 	
 		<div class="article-meta">
-		  <a href="/2015/12/08/彻底弄懂css中单位px和em,rem的区别/" class="article-date">
-  	<time datetime="2015-12-08T05:06:59.000Z" itemprop="datePublished">2015-12-08</time>
+		  <a href="/2016/01/07/rem-Chrome-bug：rem单位的字号在Chrome浏览器中过大/" class="article-date">
+  	<time datetime="2016-01-07T14:54:23.000Z" itemprop="datePublished">2016-01-07</time>
 </a>
 		</div>
 	  
@@ -190,7 +190,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      彻底弄懂css中单位px和em,rem的区别
+      rem Chrome bug：rem单位的字号在Chrome浏览器中过大
     </h1>
   
 
@@ -199,7 +199,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chrome/">Chrome</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rem/">rem</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
 	</div>
 
         
@@ -217,36 +217,22 @@
 		
     <div class="article-entry" itemprop="articleBody">
       
-        <p>国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？</p>
-<h1 id="PX_u7279_u70B9"><a href="#PX_u7279_u70B9" class="headerlink" title="PX特点"></a>PX特点</h1><ol>
-<li>IE无法调整那些使用px作为单位的字体大小；</li>
-<li>国外的大部分网站能够调整的原因在于其使用了em或rem作为字体单位；</li>
-<li>Firefox能够调整px和em，rem，但是96%以上的中国网民使用IE浏览器(或内核)。</li>
-</ol>
+        <p>rem作为CSS3新增的一个相对单位（root em，根em），它是相对于HTML根节点，这个单位可谓集相对大小和绝对大小的优点于一身，通过它既可以做到只修改根元素就成比例地调整所有字体大小，又可以避免字体大小逐层复合的连锁反应。</p>
+<p>但是，用过之后就知道它会出现一个问题：用Chrome打开网站，在初始化页面时，有时候会出现字体很大的情况。但是刷新一下页面就好了。如下图所示：</p>
 <a id="more"></a> 
-<img title="图片标题" alt="图片说明" class="text-center" src="http://7xp00j.com1.z0.glb.clouddn.com/static/images/1505196wwz21kmjckgk22k.jpg?imageView2/2/w/600">
-<p>px像素（Pixel）。相对长度单位。像素px是相对于显示器屏幕分辨率而言的。(引自CSS2.0手册) </p>
-<p>em是相对长度单位。相对于当前对象内文本的字体尺寸。如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸。(引自CSS2.0手册)</p>
-<p>任意浏览器的默认字体高都是16px。所有未经调整的浏览器都符合: 1em=16px。那么12px=0.75em,10px=0.625em。为了简化font-size的换算，需要在css中的body选择器中声明 Font-size=62.5%，这就使em值变为 16px*62.5%=10px, 这样12px=1.2em, 10px=1em, 也就是说只需要将你的原来的px数值除以10，然后换上em作为单位就行了。</p>
-<p><strong>EM特点</strong></p>
-<ol>
-<li>em的值并不是固定的；</li>
-<li>em会继承父级元素的字体大小。</li>
-</ol>
-<p>所以我们在写CSS的时候，需要注意两点：</p>
-<ol>
-<li>body选择器中声明Font-size=62.5%；</li>
-<li>将你的原来的px数值除以10，然后换上em作为单位；</li>
-<li>重新计算那些被放大的字体的em数值。避免字体大小的重复声明。 </li>
-</ol>
-<p>也就是避免1.2 * 1.2= 1.44的现象。比如说你在#content中声明了字体大小为1.2em，那么在声明p的字体大小时就只能是1em，而不是1.2em, 因为此em非彼em，它因继承#content的字体高而变为了1em=12px。</p>
-<p><strong>rem特点</strong> </p>
-<p>rem是CSS3新 增的一个相对单位（root em，根em），这个单位引起了广泛关注。这个单位与em有什么区别呢？区别在于使用rem为元素设定字体大小时，仍然是相对大小，但相对的只是HTML 根元素。这个单位可谓集相对大小和绝对大小的优点于一身，通过它既可以做到只修改根元素就成比例地调整所有字体大小，又可以避免字体大小逐层复合的连锁反 应。目前，除了IE8及更早版本外，所有浏览器均已支持rem。对于不支持它的浏览器，应对方法也很简单，就是多写一个绝对单位的声明。这些浏览器会忽略 用rem设定的字体大小。下面就是一个例子：</p>
-<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p &#123;font-size:<span class="number">14</span>px; font-size:.<span class="number">875</span><span class="comment">rem;&#125;</span></span><br></pre></td></tr></table></figure>
-<p><strong>注意：</strong></p>
-<p>选择使用什么字体单位主要由你的项目来决定，如果你的用户群都使用最新版的浏览器，那推荐使用rem，如果要考虑兼容性，那就使用px,或者两者同时使用。</p>
-<p>在这里为大家提供一个px,em,rem单位转换工具</p>
-<p>地址：<a href="http://pxtoem.com" target="_blank" rel="external">http://pxtoem.com</a></p>
+<p><img title="rem单位的字号在Chrome浏览器中过大" alt="rem单位的字号在Chrome浏览器中过大" class="text-center" src="http://7xp00j.com1.z0.glb.clouddn.com/static/images/chrome-font-size-bug.jpg"></p>
+
+<p>之所以会出现这种情况，原因是因为我们为了计算方便，将原本默认1rem=16px修改1rem=10px，以方便我们使用rem单位计算各种font-size。</p>
+<p>因此，我们在html中通常做了如下设置：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">62.5%</span></span></span>; <span class="comment">/*10÷16×100% = 62.5%  1rem = 10px */</span>&#125;</span></span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font</span>:<span class="value"><span class="number">16px</span>/<span class="number">1.5</span> Arial, Sans-serif</span></span>; <span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">1.6rem</span></span></span>; &#125;</span></span><br></pre></td></tr></table></figure>
+<p>但是，Chrome浏览器有时候会忽略了html的设置。于是在初始化页面的时候，出现了上面字体过大的情况，本来1.6rem应该渲染成16px的字体，却被渲染成了16*1.6=25.6px大小了。但是刷新页面之后就正常了。</p>
+<p><strong> 解决方法：</strong></p>
+<p>将单位为 rem 的字号在 body 下面的子元素中声明。如在我所写的页面中 #wrapper 是 body 的子元素，那么我就将 CSS 属性 font-size:1.6rem 放到 # wrapper中，具体代码如下所示：</p>
+<pre><code class="css"><span class="selector-tag">html</span> { <span class="attribute">font-size</span>:<span class="number">62.5%</span>; }
+<span class="selector-tag">body</span> { <span class="attribute">font</span>:<span class="number">16px</span>/<span class="number">1.5</span> Arial, Sans-serif; }
+<span class="selector-tag">body</span> <span class="selector-id">#wrapper</span> { <span class="attribute">font-size</span>: <span class="number">1.6rem</span>;  }
+</code></pre>
+<p><br><br><strong> 参考资料： </strong><br><a href="https://wordpress.org/support/topic/font-size-too-large-until-refresh-in-google-chrome" target="_blank" rel="external">Font size too large until refresh in Google Chrome</a><br><a href="http://techably.com/chrome-font-size-bug-fix/11996/" target="_blank" rel="external">Fix the Font size bug in Google Chrome</a></p>
 
       
     </div>
@@ -256,15 +242,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/12/13/企业网站常用的悬浮QQ在线客服jQuery插件/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          企业网站常用的悬浮QQ在线客服jQuery插件
-        
-      </div>
-    </a>
   
+    <a href="/2015/12/28/支持响应式的Tabs选项卡jQuery插件/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">支持响应式的Tabs选项卡jQuery插件</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -291,7 +273,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="彻底弄懂css中单位px和em,rem的区别" data-title="彻底弄懂css中单位px和em,rem的区别" data-url="http://sufangyu.github.io/2015/12/08/彻底弄懂css中单位px和em,rem的区别/"></div>
+	<div class="ds-thread" data-thread-key="rem-Chrome-bug：rem单位的字号在Chrome浏览器中过大" data-title="rem Chrome bug：rem单位的字号在Chrome浏览器中过大" data-url="http://sufangyu.github.io/2016/01/07/rem-Chrome-bug：rem单位的字号在Chrome浏览器中过大/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
