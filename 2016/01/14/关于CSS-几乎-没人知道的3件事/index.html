@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>关于CSS[几乎]没人知道的3件事 | 方雨_Yu的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="你真的了解CSS吗？在六个月前，我提供了一个在线免费 CSS 测试系统。测试结果表明很多一线开发者并没有如他们所想的那样了解 CSS。目前有超过 3,000 人参加了该项测试，平均成绩只有 55 分。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于CSS[几乎]没人知道的3件事">
+<meta property="og:url" content="http://sufangyu.github.io/2016/01/14/关于CSS-几乎-没人知道的3件事/index.html">
+<meta property="og:site_name" content="方雨_Yu的博客">
+<meta property="og:description" content="你真的了解CSS吗？在六个月前，我提供了一个在线免费 CSS 测试系统。测试结果表明很多一线开发者并没有如他们所想的那样了解 CSS。目前有超过 3,000 人参加了该项测试，平均成绩只有 55 分。">
+<meta property="og:image" content="http://7xp00j.com1.z0.glb.clouddn.com/static/images/1429090154fig-negative-margin-float.png">
+<meta property="og:updated_time" content="2016-01-14T15:39:09.043Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="关于CSS[几乎]没人知道的3件事">
+<meta name="twitter:description" content="你真的了解CSS吗？在六个月前，我提供了一个在线免费 CSS 测试系统。测试结果表明很多一线开发者并没有如他们所想的那样了解 CSS。目前有超过 3,000 人参加了该项测试，平均成绩只有 55 分。">
+  
+    <link rel="alternative" href="/atom.xml" title="方雨_Yu的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+  <link rel="stylesheet" href="/css/owl.carousel.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="https://avatars0.githubusercontent.com/u/1852629?v=3&amp;s=460" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">方雨_Yu</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">关注前端开发，爱生活！</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/categories/前端">前端</a></li>
+				        
+							<li><a href="/categories/随笔">随笔</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/sufangyu" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://www.weibo.com" title="weibo">weibo</a>
+					        
+								<a class="zcool" target="_blank" href="http://fangyu.zcool.com.cn" title="zcool">zcool</a>
+					        
+								<a class="mail" target="_blank" href="mailto:304683191@qq.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/CSS/" style="font-size: 16.67px;">CSS</a> <a href="/tags/Chrome/" style="font-size: 10px;">Chrome</a> <a href="/tags/HTML/" style="font-size: 13.33px;">HTML</a> <a href="/tags/JavaScript/" style="font-size: 13.33px;">JavaScript</a> <a href="/tags/jQuery/" style="font-size: 13.33px;">jQuery</a> <a href="/tags/rem/" style="font-size: 10px;">rem</a> <a href="/tags/前端/" style="font-size: 20px;">前端</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">方雨_Yu</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="https://avatars0.githubusercontent.com/u/1852629?v=3&amp;s=460" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">方雨_Yu</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">关注前端开发，爱生活！</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/categories/前端">前端</a></li>
+		        
+					<li><a href="/categories/随笔">随笔</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/sufangyu" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://www.weibo.com" title="weibo">weibo</a>
+			        
+						<a class="zcool" target="_blank" href="http://fangyu.zcool.com.cn" title="zcool">zcool</a>
+			        
+						<a class="mail" target="_blank" href="mailto:304683191@qq.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-关于CSS-几乎-没人知道的3件事" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    
+	
+  <div class="article-inner">
+	
+	
+		<div class="article-meta">
+		  <a href="/2016/01/14/关于CSS-几乎-没人知道的3件事/" class="article-date">
+  	<time datetime="2016-01-14T14:58:07.000Z" itemprop="datePublished">2016-01-14</time>
+</a>
+		</div>
+	  
+  
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      关于CSS[几乎]没人知道的3件事
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/前端/">前端</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+	
+	
+		
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>你真的了解CSS吗？在六个月前，我提供了一个在线免费 CSS 测试系统。测试结果表明很多一线开发者并没有如他们所想的那样了解 CSS。目前有超过 3,000 人参加了该项测试，平均成绩只有 55 分。平均分本身并没有什么意思，我更加关心大家都栽在了哪些问题。在这篇文章中，将其中三个出错程度最高的问题列出来。我们来讨论每个问题，告诉你哪个答案是被选择的最多，然后解释正确答案。</p>
+<p>可以肯定地说，如果你读完这篇文章后再参加测试，将会有不公平的优势！</p>
+<a id="more"></a> 
+<h1 id="Q1_uFF1A_u8BBE_u7F6E_line-height__u7684_u6700_u4F73_u65B9_u5F0F"><a href="#Q1_uFF1A_u8BBE_u7F6E_line-height__u7684_u6700_u4F73_u65B9_u5F0F" class="headerlink" title="<strong> Q1：设置 line-height 的最佳方式 </strong>"></a><strong> Q1：设置 line-height 的最佳方式 </strong></h1><p>第一个问题对于经常操作文本样式的开发者来说应该很简单：<strong> 想要让站点内文字默认为双倍行距。下面哪个 line-height 值是最佳实现方式？ </strong> </p>
+<ul>
+<li>200%</li>
+<li>2em</li>
+<li>2</li>
+<li>double</li>
+</ul>
+<p>对于这4个答案，你可能觉得凭运气也会有25%的人会答对，但结果却是只有31%的人回答正确！花上一分钟选择你认为的正确答案，然后继续往下接着看。</p>
+<p>首先排除：double，着只是用来混淆你的。line-height接受的唯一关键字是normal。我很高兴地说，仅有9%被这个选项蒙蔽。尽管，剩下的三个答案都非常得普遍。</p>
+<p>大多数测试者选择了2em（39%）。实际上，2em确实会将它所应用的元素内的文本渲染为双倍行距；不过 200% ，仅仅有 21% 选择了这个答案！或者 em 相比百分数更加流行，又或者人们根本就没有理解它们。</p>
+<p>然而，正确答案是 2。</p>
+<p>这是一个很久以前的一个教训，那时我第一次学习 CSS。确保将 line-height 指定为一个无单位的数值；这样一来，指定了不同 font-size 的子元素将会继承这个数值而不是一个固定的高度。</p>
+<p>我们假设页面默认的 font-size 是 12pt ，不过它也会包含了一个 font-size 为 24pt 的头部。如果你将 body 的 line-height 设置为2em 或者 200%，那样在文档中（当然也包括头部）就会得到一个 24pt 的行高（body 的 font-size 的 2 倍）。因而，头部就是单倍行距，而不是双倍！</p>
+<p>相反，将 line-height 设置为 2 会告知浏览器保持 font-size/line-height 比例，即便文字的尺寸发生变化。body 的行高将是 24pt，而头部的文字为 24pt，行高也将自动增长为 48pt。</p>
+<h1 id="Q2_uFF1A_u5982_u4F55_u8BA9_u5143_u7D20_u90E8_u5206_u91CD_u53E0"><a href="#Q2_uFF1A_u5982_u4F55_u8BA9_u5143_u7D20_u90E8_u5206_u91CD_u53E0" class="headerlink" title="<strong> Q2：如何让元素部分重叠 </strong>"></a><strong> Q2：如何让元素部分重叠 </strong></h1><p>这个问题有一点棘手。需要一些 CSS 布局常用到的“技巧”：<strong> 仅仅借助下面的哪个 CSS 属性，可以实现 HTML 元素部分重叠？ </strong></p>
+<ul>
+<li>z-index</li>
+<li>margin</li>
+<li>overflow</li>
+<li>background</li>
+</ul>
+<p>请选择一个你认为的正确答案？OK，我们深入看一下。</p>
+<p>同样，有一个很容易排除的选项： background。除了 2% 的测试者外都避开了它，知道它控制背景颜色和图像。</p>
+<p>很不幸，很多测试者直接选择了 z-index。几乎有 46% 栽倒在这个选项上。我猜测是因为他们没有真正地理解 z-index的工作原理。实际上，自身设置 z-index 属性根本无济于事；你还需要设置元素的 position 属性让 z-index 起作用。简而言之， z-index 控制了部分重叠元素间的堆放顺序，不过前提是它们要重叠。MDN 上有一篇非常棒的文章叫做《理解 CSS z-index》，非常值得仔细阅读。</p>
+<p>如果你曾用到过overflow，同样也很容易排除。它用来在一个固定尺寸的盒子内控制内部元素的行为：是否被遮盖，是否在盒子边框外部展示等等。而且，这会需要一些其他 CSS 属性所控制的盒子尺寸；仅仅通过它是不会导致部分遮盖的。然而，22% 的测试者认为它可以。</p>
+<p>剩下的就是 margin，也就是正确答案。仅仅 30% 的测试者选择了它。你可能好奇究竟一个属性如何做到元素间的相互遮盖。如果你具备一些 CSS 布局的经验，答案应该很明显：负值 margin 让它们相互遮盖。</p>
+<p>为了演示这个，我创建了一个仅有两个 div 元素的页面。将第二个 div 的 margin-top 值设置成负值，比如 -100px。砰！现在第二个 div 覆盖了第一个 div 100 像素。</p>
+<p><img title="如何让元素部分重叠" alt="如何让元素部分重叠" class="text-center" src="http://7xp00j.com1.z0.glb.clouddn.com/static/images/1429090154fig-negative-margin-float.png"></p>
+
+<p>实际上，你几乎不会有意地这样覆盖一个区块，不过负值 margin 在处理外层空间小于 HTML 元素大小的情况时出奇地好用。</p>
+<p>对 web 设计历史爱好者来讲，在 2005 年负值 margin 实现的部分覆盖元素使得三列页面布局成为可能，比如所谓的One True Layout（以及后来的圣杯布局）。</p>
+<h1 id="Q3_uFF1A_u4F2A_u5143_u7D20_VS__u4F2A_u7C7B"><a href="#Q3_uFF1A_u4F2A_u5143_u7D20_VS__u4F2A_u7C7B" class="headerlink" title="<strong> Q3：伪元素 VS 伪类 </strong>"></a><strong> Q3：伪元素 VS 伪类 </strong></h1><p>最后一个问题有一点故意刁难。不过只有 23% 的测试者回答正确（比碰运气还糟糕！）。毫无疑问，它挖出了一个疑点。</p>
+<p><strong> 下面哪个效果可以通过伪元素很好地实现？ </strong></p>
+<ul>
+<li>当用户将鼠标悬停在超链接上时，为其添加一个投影；</li>
+<li>当复选框选中时，在其对应的 label 上显示一种不同的颜色；</li>
+<li>为表格的偶数行和奇数行添加不同的背景色；</li>
+<li>在弹性布局中，将段落的第一行加粗显示。</li>
+</ul>
+<p>其中三个效果需要借助伪类实现；仅仅有一个需要伪元素。你能区分出不同吗？在分析这个问题的正确答案之前，我们先弄清楚什么是伪类、伪元素。</p>
+<p>伪类是一个真实 HTML 元素上的一个特殊的状态。可以认为是浏览器在特定条件下将一个虚拟的类自动应用于某个元素。</p>
+<p>伪元素是 HTML 文档的一部分，尽管它不是真实的 HTML 元素，但是 CSS 允许你为它设置样式。就像是虚拟的 HTML 元素——尽管它没有真实的 HTML 标签，但你仍可以为其添加样式。</p>
+<p>先记住这点，我们再来看看下面的选项：</p>
+<p><strong> 1、当用户将鼠标悬停在超链接上时，为其添加一个投影 </strong></p>
+<p>超链接是一个真是的 HTML 元素。仅仅在特殊情况下（鼠标悬停）为其应用样式，也就是说我们需要使用伪类。该情况下你应该使用 :hover 伪类。测试结果是 22% 的测试者误认为这是伪元素。</p>
+<p><strong> 2、当复选框选中时，在其对应的 label 上显示一种不同的颜色 </strong></p>
+<p>label 是一个真实的 HTML 元素，不是虚拟的。当复选框被选中时，浏览器会将 :checked 伪类应用于它。然后，你就能够在选择器中使用它为复选框添加样式，甚至和它相邻的 label 元素（比如：使用相邻元素选择器+）。测试结果是 20% 的测试者认为这是一个伪元素。</p>
+<p><strong> 为表格的偶数行和奇数行添加不同的背景色 </strong></p>
+<p>这着实迷惑了很多人，不过重申一遍我们讨论的是将样式应用于真实的 HTML 元素（在本例中是 tr 元素）。在各自父元素包含的子元素中的偶数或者奇数行的 tr 只是另外一种符合伪类的情景。</p>
+<p>在这个示例中，对于偶数行伪类是 :nth-child(even)（或者 :nth-child(2n)），对于奇数行则是 :nth-child(odd) （或者 :nth-child(2n+1)）。</p>
+<p>我猜测它仅仅因为 :nth-child 和伪元素听起来都和真实的 CSS 特性很相似，但是 36% 的测试者将它选择成伪元素。</p>
+<p><strong> 在弹性布局中，将段落的第一行加粗显示 </strong></p>
+<p>很明显，这是正确答案。现在，但愿我们的讨论足够清晰。在弹性布局中，你无法看到页面中的 HTML 代码只能假想“里面仅仅包含段落文本的第一行”。浏览器会根据段落的宽度进行换行，这在弹性布局中是你无法控制的。</p>
+<p>:first-line 是允许你将样式应用于文本块第一行的伪元素，无论第一行是在何处换到第二行。</p>
+<p>如果你正在想“OK，确实讲得通，但是拜托——没一个人知道伪元素和伪类之间有什么区别”，确实 W3C 也同意你的观点。CSS3 选择器规范中，在区分二者上做了一次尝试，改变了语法——伪元素选择器使用两个冒号（::first-line），而伪类依旧使用一个（:hover）。当然，为了向后兼容，浏览器必须支持这两个版本。</p>
+<p>是滴，如我所说：故意刁难。不过，如果你和我一样是一个 CSS 骇客，我确信你了解伪元素和伪类的区别。</p>
+<p>你做的怎么样？</p>
+<p>这就是测试中三个棘手的问题。如果你仅仅对一个有信心，还可以。两个？做得不错。答对了三个，我非常乐意听到！现在，我已经公布了这些问题的答案，同样也可以用这些观点解决更棘手的 CSS 问题。请在评论中留言。</p>
+<p>如果你享受这些问题，或许你可以尝试一下测试的其他部分。请放心，其他的问题比这些要简单许多许多！</p>
+<p>Kevin Yank 于 1995 年接触 Web 开发，是一位备受尊重的技术类作者。Kev 更是一位知名作家、演说家和 JavaScript 专家。他热衷于让每个人都能轻易地理解 Web 技术。是的，包括你！</p>
+<p><br><br>原文：<a href="http://www.sitepoint.com/3-things-almost-one-knows-css/" target="_blank" rel="external">3 Things (Almost) No One Knows About CSS</a></p>
+<p>转载：<a href="http://top.css88.com/archives/711" target="_blank" rel="external">关于CSS[几乎]没人知道的3件事 – 前端外刊评论 – 知乎专栏</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/01/07/rem-Chrome-bug：rem单位的字号在Chrome浏览器中过大/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">rem Chrome bug：rem单位的字号在Chrome浏览器中过大</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="关于CSS-几乎-没人知道的3件事" data-title="关于CSS[几乎]没人知道的3件事" data-url="http://sufangyu.github.io/2016/01/14/关于CSS-几乎-没人知道的3件事/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"sufangyu"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 方雨_Yu的博客
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: true
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/custom.js"></script>
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
