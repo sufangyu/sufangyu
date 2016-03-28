@@ -832,8 +832,8 @@ a {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 50%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   float: left;
 }
 @media screen and (max-width: 1024px) {
