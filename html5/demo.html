@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Retina 1px border</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body { font: 14px/1.5 "Microsoft Yahei"; }
+		.demo { width: 700px; margin:50px auto; }
+
+		ul li { position: relative; padding: 12px 0; }
+		ul li:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: -1px;
+			width: 100%;
+			height: 1px;
+			border-top: 1px solid #000;
+			-webkit-transform: scaleY(0.5);
+			transform: scaleY(0.5);
+		}
+	</style>
+	<script src="js/main.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+</head>
+<body>
+	
+	<div class="demo">
+		<ul>
+			<li>Retina屏幕下1px边框线</li>
+			<li>Retina屏幕下1px边框线</li>
+			<li>Retina屏幕下1px边框线</li>
+			<li>Retina屏幕下1px边框线</li>
+			<li>Retina屏幕下1px边框线</li>
+		</ul>
+	</div>
+
+</body>
+</html>
