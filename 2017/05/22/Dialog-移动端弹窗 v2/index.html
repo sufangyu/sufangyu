@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Dialog 移动端弹窗 v2 | 方雨_Yu的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="移动端弹窗插件，包括常见的 alert、confirm。toast、notice 四种类型弹窗，支持 jQuery 和 Zepto 库。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dialog 移动端弹窗 v2">
+<meta property="og:url" content="http://sufangyu.github.io/2017/05/22/Dialog-移动端弹窗 v2/index.html">
+<meta property="og:site_name" content="方雨_Yu的博客">
+<meta property="og:description" content="移动端弹窗插件，包括常见的 alert、confirm。toast、notice 四种类型弹窗，支持 jQuery 和 Zepto 库。">
+<meta property="og:image" content="http://7xp00j.com1.z0.glb.clouddn.com/modal.gif">
+<meta property="og:image" content="http://7xp00j.com1.z0.glb.clouddn.com/moreButtons.gif">
+<meta property="og:image" content="http://7xp00j.com1.z0.glb.clouddn.com/moduleChange.gif">
+<meta property="og:image" content="http://7xp00j.com1.z0.glb.clouddn.com/dialog2EWM.png">
+<meta property="og:updated_time" content="2018-03-26T04:40:11.206Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dialog 移动端弹窗 v2">
+<meta name="twitter:description" content="移动端弹窗插件，包括常见的 alert、confirm。toast、notice 四种类型弹窗，支持 jQuery 和 Zepto 库。">
+  
+    <link rel="alternative" href="/atom.xml" title="方雨_Yu的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+  <link rel="stylesheet" href="/css/owl.carousel.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="https://avatars0.githubusercontent.com/u/1852629?v=3&amp;s=460" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">方雨_Yu</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">关注前端开发，爱生活！</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/categories/前端">前端</a></li>
+				        
+							<li><a href="/work">作品</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/sufangyu" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://www.weibo.com" title="weibo">weibo</a>
+					        
+								<a class="zcool" target="_blank" href="http://fangyu.zcool.com.cn" title="zcool">zcool</a>
+					        
+								<a class="mail" target="_blank" href="mailto:304683191@qq.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/CSS/" style="font-size: 14px;">CSS</a> <a href="/tags/Chrome/" style="font-size: 10px;">Chrome</a> <a href="/tags/Dialog/" style="font-size: 12px;">Dialog</a> <a href="/tags/HTML/" style="font-size: 14px;">HTML</a> <a href="/tags/JavaScript/" style="font-size: 12px;">JavaScript</a> <a href="/tags/Material-Design/" style="font-size: 10px;">Material Design</a> <a href="/tags/Zepto/" style="font-size: 16px;">Zepto</a> <a href="/tags/infinite-list/" style="font-size: 10px;">infinite-list</a> <a href="/tags/jQuery/" style="font-size: 18px;">jQuery</a> <a href="/tags/label/" style="font-size: 10px;">label</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/react-intl/" style="font-size: 10px;">react-intl</a> <a href="/tags/rem/" style="font-size: 10px;">rem</a> <a href="/tags/下拉列表/" style="font-size: 10px;">下拉列表</a> <a href="/tags/前端/" style="font-size: 20px;">前端</a> <a href="/tags/响应式/" style="font-size: 10px;">响应式</a> <a href="/tags/国际化/" style="font-size: 10px;">国际化</a> <a href="/tags/多语言/" style="font-size: 10px;">多语言</a> <a href="/tags/弹窗/" style="font-size: 10px;">弹窗</a> <a href="/tags/无限加载/" style="font-size: 10px;">无限加载</a> <a href="/tags/水波纹/" style="font-size: 10px;">水波纹</a> <a href="/tags/移动端/" style="font-size: 12px;">移动端</a> <a href="/tags/表单/" style="font-size: 10px;">表单</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">方雨_Yu</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="https://avatars0.githubusercontent.com/u/1852629?v=3&amp;s=460" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">方雨_Yu</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">关注前端开发，爱生活！</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/categories/前端">前端</a></li>
+		        
+					<li><a href="/work">作品</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/sufangyu" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://www.weibo.com" title="weibo">weibo</a>
+			        
+						<a class="zcool" target="_blank" href="http://fangyu.zcool.com.cn" title="zcool">zcool</a>
+			        
+						<a class="mail" target="_blank" href="mailto:304683191@qq.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-Dialog-移动端弹窗 v2" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    
+	
+  <div class="article-inner">
+	
+	
+		<div class="article-meta">
+		  <a href="/2017/05/22/Dialog-移动端弹窗 v2/" class="article-date">
+  	<time datetime="2017-05-22T08:57:09.000Z" itemprop="datePublished">2017-05-22</time>
+</a>
+		</div>
+	  
+  
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Dialog 移动端弹窗 v2
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dialog/">Dialog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Zepto/">Zepto</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery/">jQuery</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/弹窗/">弹窗</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/前端/">前端</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+	
+	
+		
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>移动端弹窗插件，包括常见的 alert、confirm。toast、notice 四种类型弹窗，支持 jQuery 和 Zepto 库。</p>
+<h3 id="u7279_u6027"><a href="#u7279_u6027" class="headerlink" title="特性"></a>特性</h3><ul>
+<li>支持常见的 alert、confirm、toast、notice 四种类型弹窗</li>
+<li>可选择使用 IOS 或者 Material Design 风格的弹窗</li>
+<li>可自定义按钮的文字、样式、回调函数，支持多个按钮</li>
+<li>多个弹窗状态改变回调函数</li>
+<li>同时支持 jQuery 和 Zepto 库</li>
+<li>可扩展性强</li>
+</ul>
+<h3 id="u65B0_u589E"><a href="#u65B0_u589E" class="headerlink" title="新增"></a>新增</h3><ul>
+<li>弹窗可选 IOS 或者 Material Design 风格</li>
+<li>可自定义多个按钮</li>
+<li>按钮排版样式，并排或者堆叠</li>
+<li>notice 弹窗的位置，居中或者底部</li>
+</ul>
+<a id="more"></a>
+<h3 id="u622A_u56FE"><a href="#u622A_u56FE" class="headerlink" title="截图"></a>截图</h3><p><img src="http://7xp00j.com1.z0.glb.clouddn.com/modal.gif" width="200"><br><img src="http://7xp00j.com1.z0.glb.clouddn.com/moreButtons.gif" width="200"><br><img src="http://7xp00j.com1.z0.glb.clouddn.com/moduleChange.gif" width="200"></p>
+<h2 id="u793A_u4F8B"><a href="#u793A_u4F8B" class="headerlink" title="示例"></a>示例</h2><p>查看效果，扫二维码或者移步→：<a href="http://sufangyu.github.io/project/dialog2/dist/demos/">demo示例</a></p>
+<p><img src="http://7xp00j.com1.z0.glb.clouddn.com/dialog2EWM.png" width="100" alt="erweima"></p>
+
+
+<h2 id="u4F7F_u7528_u8BF4_u660E"><a href="#u4F7F_u7528_u8BF4_u660E" class="headerlink" title="使用说明"></a>使用说明</h2><p><strong>1、引入 CSS 文件</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel="stylesheet" href="../css/dialog.css" /&gt;</span><br></pre></td></tr></table></figure></p>
+<p><strong>2、引入 JS 文件</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"../lib/zepto.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"../js/dialog.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<p><strong>3、HTML 结构</strong><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">id</span>=<span class="value">"btn-01"</span>&gt;</span>显示弹窗<span class="tag">&lt;/<span class="title">button</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>4、实例化</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).on(<span class="string">'click'</span>, <span class="string">'#btn-01'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> dialog1 = $(<span class="built_in">document</span>).dialog(&#123;</span><br><span class="line">        content: <span class="string">'Dialog 移动端弹窗插件的自定义提示内容'</span>,</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<h2 id="u53C2_u6570"><a href="#u53C2_u6570" class="headerlink" title="参数"></a>参数</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">参数</th>
+<th style="text-align:left">默认值</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">type</td>
+<td style="text-align:left">‘alert’</td>
+<td style="text-align:left">弹窗的类型。alert: 确定; confirm: 确定/取消; toast: 状态提示; notice: 提示信息</td>
+</tr>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">‘default’</td>
+<td style="text-align:left">alert 与 confirm 弹窗的风格。<br>default: 根据访问设备平台; ios: ios 风格; android: MD design 风格</td>
+</tr>
+<tr>
+<td style="text-align:left">titleShow</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">是否显示标题</td>
+</tr>
+<tr>
+<td style="text-align:left">titleText</td>
+<td style="text-align:left">‘提示’</td>
+<td style="text-align:left">标题文字</td>
+</tr>
+<tr>
+<td style="text-align:left">closeBtnShow</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">是否显示关闭按钮</td>
+</tr>
+<tr>
+<td style="text-align:left">content</td>
+<td style="text-align:left">‘’</td>
+<td style="text-align:left">弹窗提示内容, 值可以是 HTML 内容</td>
+</tr>
+<tr>
+<td style="text-align:left">contentScroll</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">alert 与 confirm 弹窗提示内容是否限制最大高度, 使其可以滚动</td>
+</tr>
+<tr>
+<td style="text-align:left">dialogClass</td>
+<td style="text-align:left">‘’</td>
+<td style="text-align:left">弹窗自定义 class</td>
+</tr>
+<tr>
+<td style="text-align:left">autoClose</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">弹窗自动关闭的延迟时间(毫秒)。<br>0: 不自动关闭; 大于0: 自动关闭弹窗的延迟时间</td>
+</tr>
+<tr>
+<td style="text-align:left">overlayShow</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">是否显示遮罩层</td>
+</tr>
+<tr>
+<td style="text-align:left">overlayClose</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">是否可以点击遮罩层关闭弹窗</td>
+</tr>
+<tr>
+<td style="text-align:left">buttonStyle</td>
+<td style="text-align:left">‘side’</td>
+<td style="text-align:left">按钮排版样式。side: 并排; stacked: 堆叠</td>
+</tr>
+<tr>
+<td style="text-align:left">buttonTextConfirm</td>
+<td style="text-align:left">‘确定’</td>
+<td style="text-align:left">确定按钮文字</td>
+</tr>
+<tr>
+<td style="text-align:left">buttonTextCancel</td>
+<td style="text-align:left">‘取消’</td>
+<td style="text-align:left">取消按钮文字</td>
+</tr>
+<tr>
+<td style="text-align:left">buttonClassConfirm</td>
+<td style="text-align:left">‘’</td>
+<td style="text-align:left">确定按钮自定义 class</td>
+</tr>
+<tr>
+<td style="text-align:left">buttonClassCancel</td>
+<td style="text-align:left">‘’</td>
+<td style="text-align:left">取消按钮自定义 class</td>
+</tr>
+<tr>
+<td style="text-align:left">buttons</td>
+<td style="text-align:left">[]</td>
+<td style="text-align:left">confirm 弹窗自定义按钮组, 会覆盖”确定”与”取消”按钮; <br>单个 button 对象可设置 name [ 名称 ]、class [ 自定义class ]、callback [ 点击执行的函数 ]</td>
+</tr>
+<tr>
+<td style="text-align:left">infoIcon</td>
+<td style="text-align:left">‘’</td>
+<td style="text-align:left">toast 与 notice 弹窗的提示图标, 值为图标的路径。不设置=不显示</td>
+</tr>
+<tr>
+<td style="text-align:left">infoText</td>
+<td style="text-align:left">‘’</td>
+<td style="text-align:left">toast 与 notice 弹窗的提示文字, 会覆盖 content 的设置</td>
+</tr>
+<tr>
+<td style="text-align:left">position</td>
+<td style="text-align:left">‘center’</td>
+<td style="text-align:left">notice 弹窗的位置, center: 居中; bottom: 底部</td>
+</tr>
+</tbody>
+</table>
+<h2 id="u56DE_u8C03_u51FD_u6570"><a href="#u56DE_u8C03_u51FD_u6570" class="headerlink" title="回调函数"></a>回调函数</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">函数</th>
+<th style="text-align:left">默认值</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">onClickConfirmBtn</td>
+<td style="text-align:left">function(){}</td>
+<td style="text-align:left">点击“确定”按钮的回调函数</td>
+</tr>
+<tr>
+<td style="text-align:left">onClickCancelBtn</td>
+<td style="text-align:left">function(){}</td>
+<td style="text-align:left">点击“取消”按钮的回调函数</td>
+</tr>
+<tr>
+<td style="text-align:left">onClickCloseBtn</td>
+<td style="text-align:left">function(){}</td>
+<td style="text-align:left">点击“关闭”按钮的回调函数</td>
+</tr>
+<tr>
+<td style="text-align:left">onBeforeShow</td>
+<td style="text-align:left">function(){}</td>
+<td style="text-align:left">弹窗显示前的回调函数</td>
+</tr>
+<tr>
+<td style="text-align:left">onShow</td>
+<td style="text-align:left">function(){}</td>
+<td style="text-align:left">弹窗显示后的回调函数</td>
+</tr>
+<tr>
+<td style="text-align:left">onBeforeClosed</td>
+<td style="text-align:left">function(){}</td>
+<td style="text-align:left">弹窗关闭前的回调函数</td>
+</tr>
+<tr>
+<td style="text-align:left">onClosed</td>
+<td style="text-align:left">function(){}</td>
+<td style="text-align:left">弹窗关闭后的回调函数</td>
+</tr>
+</tbody>
+</table>
+<h2 id="u65B9_u6CD5"><a href="#u65B9_u6CD5" class="headerlink" title="方法"></a>方法</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">方法</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">obj.close</td>
+<td style="text-align:left">关闭对话框。<br>用法：dialogObj.close()</td>
+</tr>
+<tr>
+<td style="text-align:left">obj.update</td>
+<td style="text-align:left">更改 toast 和 notice 类型弹窗内容 ( 图标以及提示文字 )<br>可传入参数：<br>content: 弹窗内容, 可以是HTML <br>                infoIcon: 弹窗提示图标<br>infoText: 弹窗提示文字<br>autoClose: 自动关闭的延迟时间<br>onBeforeClosed: 关闭前回调函数<br>onClosed: 关闭后回调函数</td>
+</tr>
+</tbody>
+</table>
+<h2 id="u76EE_u5F55_u7ED3_u6784"><a href="#u76EE_u5F55_u7ED3_u6784" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├─dist                <span class="comment"># 项目发布资源目录, Grunt 生成</span></span><br><span class="line">│  ├─css              <span class="comment"># 项目 CSS 文件</span></span><br><span class="line">│  ├─demos            <span class="comment"># 项目示例页面</span></span><br><span class="line">│  ├─images           <span class="comment"># 项目 image 文件</span></span><br><span class="line">│  ├─js               <span class="comment"># 项目 JS 文件</span></span><br><span class="line">│  │  ├─dialog.js     <span class="comment"># 弹窗 JS</span></span><br><span class="line">│  │  ├─dialog.min.js <span class="comment"># 弹窗最小版本 JS</span></span><br><span class="line">│  │  └─example.js    <span class="comment"># 示例 JS</span></span><br><span class="line">│  └─<span class="class"><span class="keyword">lib</span>              <span class="comment"># 公共 JS 文件</span></span></span><br><span class="line">│</span><br><span class="line">├─src                 <span class="comment"># 实际进行开发的目录</span></span><br><span class="line">│  ├─css              <span class="comment"># 项目 CSS 文件, 由 Grunt 生成</span></span><br><span class="line">│  ├─demos            <span class="comment"># 项目示例页面</span></span><br><span class="line">│  ├─images           <span class="comment"># 项目 image 文件</span></span><br><span class="line">│  ├─js               <span class="comment"># 项目 JS 文件</span></span><br><span class="line">│  │  ├─dialog.js     <span class="comment"># 弹窗主要 JS</span></span><br><span class="line">│  │  ├─example.js    <span class="comment"># 示例 JS</span></span><br><span class="line">│  │  ├─ripple.js     <span class="comment"># 点击水波纹效果 JS</span></span><br><span class="line">│  │  └─tapEvent.js   <span class="comment"># 点击事件 JS</span></span><br><span class="line">│  ├─<span class="class"><span class="keyword">lib</span>              <span class="comment"># 公共 JS 文件</span></span></span><br><span class="line">│  ├─scss             <span class="comment"># 项目相关 SCSS 文件</span></span><br><span class="line">│  └─templates        <span class="comment"># 初始静态 DMEO 资源目录</span></span><br><span class="line">│</span><br><span class="line">├─<span class="constant">Gruntfile</span>.js        <span class="comment"># Grunt任务配置</span></span><br><span class="line">├─_config.json        <span class="comment"># Grunt配置所需信息</span></span><br><span class="line">└─package.json        <span class="comment"># 项目信息以及依赖</span></span><br></pre></td></tr></table></figure>
+<h2 id="Grunt__u4F7F_u7528_u65B9_u6CD5"><a href="#Grunt__u4F7F_u7528_u65B9_u6CD5" class="headerlink" title="Grunt 使用方法"></a>Grunt 使用方法</h2><p><strong>1、安装 Grunt</strong><br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>2、在本地运行项目</strong><br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">grunt</span> serve</span><br></pre></td></tr></table></figure></p>
+<p><br><br><strong> 项目下载：</strong> <a href="https://github.com/sufangyu/dialog2" target="_blank" rel="external">Dialog2</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/02/infinite-list 是可回收 DOM 的无限下拉列表插件/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          infinite-list 是可回收 DOM 的无限下拉列表插件
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/10/26/用-JS-实现-Material-Design-水波纹点按效果/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">用 JS 实现 Material Design 水波纹点按效果</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Dialog-移动端弹窗 v2" data-title="Dialog 移动端弹窗 v2" data-url="http://sufangyu.github.io/2017/05/22/Dialog-移动端弹窗 v2/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"sufangyu"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2018 方雨_Yu的博客
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: true
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/custom.js"></script>
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
